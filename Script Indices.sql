@@ -138,3 +138,5 @@ WHERE
 	AND i.is_unique_constraint = 0
 	AND (SELECT SUM(p.rows) FROM sys.partitions p WHERE p.index_id = s.index_id AND s.object_id = p.object_id) > 10000
 ORDER BY reads
+
+teste modificação do código
